@@ -15,7 +15,7 @@ export const schema = makeSchema({
     schema: join(process.cwd(), "graphql", "schema.graphql"),
   },
   contextType: {
-    export: "Context",
+    export: "Context", //exporting typescript type in context file
     module: join(process.cwd(), "graphql", "context.ts"),
   },
 });
